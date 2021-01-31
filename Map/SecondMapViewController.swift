@@ -19,7 +19,9 @@ class SecondMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         MapView.delegate = self
-        // MARK: - Tracking Button
+        
+        
+    // MARK: - Tracking Button
         let trackingButton = MKUserTrackingButton(mapView: MapView)
         trackingButton.tintColor = UIColor.gray
         trackingButton.alpha = 0.5
