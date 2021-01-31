@@ -20,6 +20,7 @@ class LaunchScreenController: UIViewController {
             let storyBoard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
             guard let pushToMapVC = storyBoard.instantiateViewController(withIdentifier: "pushToMap"  ) as? SecondMapViewController  else {
                 return
+            
             }
             self.navigationController?.pushViewController(pushToMapVC, animated: true)
         }
