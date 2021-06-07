@@ -17,15 +17,14 @@ class SpotViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBAction func popToMap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
       
-        
         for item in spots {
             if item.title == label.text{
             item.pictures = imageCell
             }
-            
         }
     
     }
+    
     let picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,14 +55,7 @@ class SpotViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        /*
-        func getPictures() -> Int  {
-            for pictures in spots.users {
-            imageCell = pictures.pictures
-        }
-            return imageCell.count
-        }
- */
+        
         return imageCell.count
     }
 

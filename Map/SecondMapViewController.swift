@@ -59,18 +59,7 @@ class SecondMapViewController: UIViewController {
         alert.addAction(add)
         present(alert, animated: true)
     }
-    /*//    MARK: - Add Anotation - need a function that can add new MKpointAnnotation
-    func addAnnotation()  {
-        //let model = modelUser()
-        for user in spots {
-            MapView.addAnnotation(user)
-        }
-        func addOldAnotation() {
-            let annotation1 = MKPointAnnotation()
-            annotation1.coordinate = CLLocationCoordinate2D()
-        }
-    }
- */
+    
     // MARK: - Check Loaction
     func checkLocationEnabled() {
         if CLLocationManager.locationServicesEnabled() {
